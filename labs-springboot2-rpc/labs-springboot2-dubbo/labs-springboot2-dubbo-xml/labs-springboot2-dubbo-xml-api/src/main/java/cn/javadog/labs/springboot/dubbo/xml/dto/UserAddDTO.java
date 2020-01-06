@@ -23,6 +23,7 @@ public class UserAddDTO implements Serializable {
     @NotEmpty(message = "昵称不能为空")
     @Length(min = 5, max = 16, message = "账号长度为 5-16 位")
     private String name;
+
     /**
      * 性别
      */

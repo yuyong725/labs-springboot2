@@ -3,19 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>labs-springboot2-dubbo</artifactId>
+        <artifactId>labs-springboot2-dubbo-annotation</artifactId>
         <groupId>cn.javadog</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labs-springboot2-dubbo-annotation</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>labs-springboot2-dubbo-annotation-api</module>
-        <module>labs-springboot2-dubbo-annotation-consumer</module>
-        <module>labs-springboot2-dubbo-annotation-provider</module>
-    </modules>
+    <artifactId>labs-springboot2-dubbo-annotation-api</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
