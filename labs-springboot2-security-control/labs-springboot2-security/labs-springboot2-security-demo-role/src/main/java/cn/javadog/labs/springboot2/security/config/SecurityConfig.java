@@ -10,6 +10,10 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 /**
  * @author 余勇
  * @date 2019年12月30日 11:44:00
+ * 安全配置
+ *
+ * @EnableGlobalMethodSecurity 注解作用看看下面：
+ * https://www.cnblogs.com/520playboy/p/7286085.html
  */
 @Configuration
 @EnableGlobalMethodSecurity(prePostEnabled = true)
