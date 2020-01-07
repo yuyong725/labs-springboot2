@@ -12,6 +12,7 @@
         <module>labs-springboot2-security-control</module>
         <module>labs-springboot2-web</module>
         <module>labs-springboot2-rpc</module>
+        <module>labs-springboot2-data-access</module>
     </modules>
 
     <dependencyManagement>
@@ -41,6 +42,12 @@
                 <groupId>org.hibernate.validator</groupId>
                 <artifactId>hibernate-validator</artifactId>
                 <version>6.0.18.Final</version>
+            </dependency>
+            <!--数据库连接-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.18</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
