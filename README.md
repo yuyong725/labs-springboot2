@@ -12,6 +12,8 @@
 
 
 #### 数据访问
+* [《Spring Boot JdbcTemplate 入门》](https://calm_java.gitee.io/blog/2020/01/07/labs-springboot2-jdbctemplate/) 对应 [labs-springboot2-jdbctemplate](https://github.com/yuyong725/labs-springboot2/tree/master/labs-springboot2-data-access/labs-springboot2-jdbctemplate) 。
+
 
 #### 安全控制
 * [《Spring Boot 安全框架 Spring Security 入门》](https://calm_java.gitee.io/blog/2019/12/29/labs-springboot2-security/) 对应 [labs-springboot2-security](https://github.com/yuyong725/labs-springboot2/tree/master/labs-springboot2-security-control/labs-springboot2-security) 。
