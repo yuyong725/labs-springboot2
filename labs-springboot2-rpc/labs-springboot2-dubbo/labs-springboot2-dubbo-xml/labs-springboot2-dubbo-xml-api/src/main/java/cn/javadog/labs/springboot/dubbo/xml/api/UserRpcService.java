@@ -13,6 +13,7 @@ import cn.javadog.labs.springboot.dubbo.xml.dto.UserDTO;
  */
 public interface UserRpcService {
 
+    /** 用于测试报错 */
     String ERROR_NAME = "handsome";
 
     /**

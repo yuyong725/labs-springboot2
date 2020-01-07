@@ -46,7 +46,7 @@ public class ConsumerApplication {
 
     }
 
-    @Component
+     @Component
     public class UserRpcServiceTest02 implements CommandLineRunner {
 
         private final Logger logger = LoggerFactory.getLogger(getClass());
@@ -96,7 +96,7 @@ public class ConsumerApplication {
             try {
                 // 创建 UserAddDTO
                 UserAddDTO addDTO = new UserAddDTO();
-                // 设置为 handsome ，触发 ServiceException 异常
+                // 设置为 ERROR_NAME ，触发 ServiceException 异常
                 addDTO.setName(UserRpcService.ERROR_NAME);
                 addDTO.setGender(1);
                 // 发起调用
