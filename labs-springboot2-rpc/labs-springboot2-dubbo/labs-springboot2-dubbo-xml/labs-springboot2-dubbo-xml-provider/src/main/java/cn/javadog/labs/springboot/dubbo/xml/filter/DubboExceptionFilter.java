@@ -24,6 +24,8 @@ import org.apache.dubbo.rpc.service.GenericService;
  * @author 余勇
  * @date 2020-01-06 20:20
  * 自定义过滤器，处理异常
+ *
+ * 参考：https://wenchao.ren/2019/02/dubbo%E8%87%AA%E5%AE%9A%E4%B9%89filter/
  */
 @Activate(group = CommonConstants.PROVIDER)
 public class DubboExceptionFilter extends ListenableFilter {
@@ -41,6 +43,9 @@ public class DubboExceptionFilter extends ListenableFilter {
 
         @Override
         public void onResponse(Result appResponse, Invoker<?> invoker, Invocation invocation) {
+
+            System.out.println("i`m working!");
+
             // 发生异常，并且非泛化调用
             if (appResponse.hasException() && GenericService.class != invoker.getInterface()) {
                 Throwable exception = appResponse.getException();
