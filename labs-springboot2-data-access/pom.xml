@@ -15,6 +15,7 @@
         <module>labs-springboot2-jdbctemplate</module>
         <module>labs-springboot2-datasource-pool</module>
         <module>labs-springboot2-mybatis</module>
+        <module>labs-springboot2-jpa</module>
     </modules>
 
     <dependencyManagement>

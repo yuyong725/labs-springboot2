@@ -15,7 +15,7 @@ import org.springframework.stereotype.Repository;
  * @date 2020-01-08 13:33
  */
 @Repository
-public interface UserMapper extends IMapper<UserDO> { // 继承的是，我们定义的 BaseMapper 接口
+public interface UserMapper extends IMapper<UserDO> {
 
     default UserDO selectByUsername(@Param("username") String username) {
         Example example = new Example(UserDO.class);

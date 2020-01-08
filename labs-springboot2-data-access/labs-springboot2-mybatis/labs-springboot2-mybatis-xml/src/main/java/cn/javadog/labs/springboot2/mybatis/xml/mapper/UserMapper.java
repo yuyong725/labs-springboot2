@@ -19,7 +19,7 @@ public interface UserMapper {
 
     int updateById(UserDO user);
 
-    int deleteById(@Param("id") Integer id); // 生产请使用标记删除，除非有点想不开，嘿嘿。
+    int deleteById(@Param("id") Integer id); // 生产请使用标记删除，除非有点想不开。
 
     UserDO selectById(@Param("id") Integer id);
 
