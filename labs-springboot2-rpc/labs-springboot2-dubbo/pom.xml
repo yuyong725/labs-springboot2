@@ -16,5 +16,21 @@
         <module>labs-springboot2-dubbo-annotation</module>
     </modules>
 
+    <dependencyManagement>
+        <dependencies>
+            <!-- JSR 参数校验规范 API -->
+            <dependency>
+                <groupId>javax.validation</groupId>
+                <artifactId>validation-api</artifactId>
+                <version>2.0.1.Final</version>
+            </dependency>
+            <!-- JSR 参数校验规范实现，我们使用 hibernate-validator -->
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>6.0.18.Final</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 </project>

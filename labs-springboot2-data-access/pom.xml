@@ -14,7 +14,17 @@
     <modules>
         <module>labs-springboot2-jdbctemplate</module>
         <module>labs-springboot2-datasource-pool</module>
+        <module>labs-springboot2-mybatis</module>
     </modules>
 
-
+    <dependencyManagement>
+        <dependencies>
+            <!--数据库连接-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.18</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>
