@@ -1,0 +1,12 @@
+# logging
+logging:
+  level:
+    # dao 开启 debug 模式 mybatis 输入 sql
+    cn.javadog: debug
+
+spring:
+  cache:
+    ehcache:
+      config: classpath:ehcache.xml # 默认就是该位置，无须配置，除非自定义了其他命名
+    type: ehcache
+

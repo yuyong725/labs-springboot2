@@ -1,6 +1,10 @@
 package cn.javadog.labs.springboot2.jpa.repository;
 
+import java.util.Date;
+
 import cn.javadog.labs.springboot2.jpa.dataobject.UserDO;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.PagingAndSortingRepository;
@@ -28,5 +32,15 @@ public interface UserRepository04 extends PagingAndSortingRepository<UserDO, Int
     @Modifying
     @Query("UPDATE UserDO  u SET u.username = :username WHERE u.id = :id")
     int updateUsernameById(Integer id, String username);
+
+    /**
+     * 分页
+     * value 属性，编写查询分页列表的 SQL
+     * countQuery 属性，编写记录总数的 SQL
+     */
+    @Query(value = "SELECT * FROM jpa_users WHERE create_time > ?1",
+        countQuery = "SELECT count(*) FROM jpa_users WHERE create_time > ?1",
+        nativeQuery = true)
+    Page<UserDO> findAfterCreateTime(Date createTime, Pageable pageable);
 
 }

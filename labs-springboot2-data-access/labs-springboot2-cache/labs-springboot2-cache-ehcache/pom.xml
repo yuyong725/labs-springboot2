@@ -3,25 +3,25 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>labs-springboot2-data-access</artifactId>
+        <artifactId>labs-springboot2-cache</artifactId>
         <groupId>cn.javadog</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>labs-springboot2-jpa</artifactId>
+    <artifactId>labs-springboot2-cache-ehcache</artifactId>
 
     <dependencies>
-        <!-- 本示例，我们使用 MySQL -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-        </dependency>
-
-        <!-- 实现对 Spring Data JPA 的自动化配置 -->
+        <!-- 实现对 Caches 的自动化配置 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+
+        <!-- Ehcache 依赖 -->
+        <dependency>
+            <groupId>net.sf.ehcache</groupId>
+            <artifactId>ehcache</artifactId>
         </dependency>
 
         <!-- 方便等会写单元测试 -->

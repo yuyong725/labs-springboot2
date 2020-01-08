@@ -2,12 +2,18 @@ package cn.javadog.labs.springboot2.jpa;
 
 import javax.transaction.Transactional;
 
+import java.util.Calendar;
+import java.util.Date;
+
 import cn.javadog.labs.springboot2.jpa.dataobject.UserDO;
 import cn.javadog.labs.springboot2.jpa.repository.UserRepository04;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
@@ -48,4 +54,16 @@ public class UserRepository04Test {
         // throw new RuntimeException("指定@Rollback(value = false)，测试报错回滚");
     }
 
+    @Test
+    public void testFindAfterCreateTime() {
+        // 创建分页条件
+        Pageable pageable = PageRequest.of(1, 5);
+        // 临时 Demo ，实际不建议这么写
+        Date createTime = new Date(2020 - 1900, Calendar.JANUARY, 8);
+        // 执行分页操作
+        Page<UserDO> page = userRepository.findAfterCreateTime(createTime, pageable);
+        // 打印
+        System.out.println(page.getTotalElements());
+        System.out.println(page.getTotalPages());
+    }
 }
