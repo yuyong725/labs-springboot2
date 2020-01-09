@@ -16,6 +16,7 @@
 * [《Spring Boot 数据库连接池入门》](https://calm_java.gitee.io/blog/2020/01/07/labs-springboot2-datasource-pool/) 对应 [labs-springboot2-datasource-pool](https://github.com/yuyong725/labs-springboot2/tree/master/labs-springboot2-data-access/labs-springboot2-datasource-pool) 。
 * [《Spring Boot MyBatis 入门》](https://calm_java.gitee.io/blog/2020/01/08/labs-springboot2-mybatis/) 对应 [labs-springboot2-mybatis](https://github.com/yuyong725/labs-springboot2/tree/master/labs-springboot2-data-access/labs-springboot2-mybatis) 。
 * [《Spring Boot JPA 入门》](https://calm_java.gitee.io/blog/2020/01/08/labs-springboot2-jpa/) 对应 [labs-springboot2-jpa](https://github.com/yuyong725/labs-springboot2/tree/master/labs-springboot2-data-access/labs-springboot2-jpa) 。
+* [《Spring Boot 缓存 Cache 入门》](https://calm_java.gitee.io/blog/2020/01/09/labs-springboot2-cache/) 对应 [labs-springboot2-cache](https://github.com/yuyong725/labs-springboot2/tree/master/labs-springboot2-data-access/labs-springboot2-cache) 。
 
 
 #### 安全控制

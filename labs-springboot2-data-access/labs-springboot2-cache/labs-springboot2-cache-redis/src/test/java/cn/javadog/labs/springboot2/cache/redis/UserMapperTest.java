@@ -5,6 +5,7 @@ import java.util.UUID;
 
 import cn.javadog.labs.springboot2.cache.redis.dataobject.UserDO;
 import cn.javadog.labs.springboot2.cache.redis.mapper.UserMapper;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,6 +14,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cache.CacheManager;
 import org.springframework.test.context.junit4.SpringRunner;
 
+@Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class UserMapperTest {
@@ -36,13 +38,13 @@ public class UserMapperTest {
         Integer id = 1;
         // 查询 id = 1 的记录
         UserDO user = userMapper.selectById(id);
-        System.out.println("user：" + user);
+        log.info("user：{}", user);
         // 判断缓存中，是不是存在
         Assert.assertNotNull("缓存为空", cacheManager.getCache(CACHE_NAME_USER).get(user.getId(), UserDO.class));
 
         // 查询 id = 1 的记录
         user = userMapper.selectById(id);
-        System.out.println("user：" + user);
+        log.info("user：{}", user);
     }
 
     @Test
