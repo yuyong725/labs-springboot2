@@ -51,6 +51,7 @@
             <artifactId>jackson-databind</artifactId>
         </dependency>
 
+        <!--使用 pub/sub 功能会用-->
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>

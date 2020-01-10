@@ -16,7 +16,7 @@ spring:
       url: jdbc:mysql://127.0.0.1:3306/labs-springboot2-multiple?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
       driver-class-name: com.mysql.jdbc.Driver
       username: root
-      password:
+      password: root
       type: com.alibaba.druid.pool.DruidDataSource # 设置类型为 DruidDataSource
       # Druid 自定义配置，对应 DruidDataSource 中的 setting 方法的属性
       min-idle: 0 # 池中维护的最小空闲连接数，默认为 0 个。

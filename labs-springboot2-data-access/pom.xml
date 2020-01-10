@@ -18,6 +18,7 @@
         <module>labs-springboot2-jpa</module>
         <module>labs-springboot2-cache</module>
         <module>labs-springboot2-redis</module>
+        <module>labs-springboot2-datasource-dynamic</module>
     </modules>
 
     <dependencyManagement>

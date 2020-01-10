@@ -42,7 +42,7 @@ public class RedisConfiguration {
     /**
      * 支持事务的 RedisTemplate
      */
-    @Bean
+    @Bean(name = "redisTransactionTemplate")
     public RedisTemplate<String, Object> redisTransactionTemplate(RedisConnectionFactory factory) {
 
         // 创建 RedisTemplate 对象

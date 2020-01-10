@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    # 订单 orders 数据源配置
+    orders:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/labs-springboot2-multiple?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: root
+    # 用户 users 数据源配置
+    users:
+      jdbc-url: jdbc:mysql://127.0.0.1:3306/labs-springboot2?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: root
+
+  jpa:
+    show-sql: true # 打印 SQL 。生产环境，建议关闭
+    # Hibernate 配置内容，对应 HibernateProperties 类
+    hibernate:
+      ddl-auto: none
+
