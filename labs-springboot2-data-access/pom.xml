@@ -19,6 +19,7 @@
         <module>labs-springboot2-cache</module>
         <module>labs-springboot2-redis</module>
         <module>labs-springboot2-datasource-dynamic</module>
+        <module>labs-springboot2-datasource-sharding</module>
     </modules>
 
     <dependencyManagement>
