@@ -32,7 +32,7 @@ public class V1_1__FixUsername extends BaseJavaMigration {
                 String username = rs.getString("username");
                 if ("calm flyway".equals(username)) {
                     Integer id = rs.getInt("id");
-                    template.update("UPDATE users SET username = ? WHERE id = ?",
+                    template.update("UPDATE flyway_users SET username = ? WHERE id = ?",
                             "calm", id);
                     logger.info("[migrate][更新 user({}) 的用户名({} => {})", id, username, "calm");
                 }

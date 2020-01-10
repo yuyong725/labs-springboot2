@@ -10,6 +10,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>labs-springboot2-database-version-control</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>labs-springboot2-flyway</module>
+        <module>labs-springboot-liquibase</module>
+    </modules>
 
 
 </project>

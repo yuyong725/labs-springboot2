@@ -11,5 +11,24 @@
 
     <artifactId>labs-springboot-liquibase</artifactId>
 
+    <dependencies>
+        <!-- 实现对数据库连接池的自动化配置 -->
+        <!-- 同时，spring-boot-starter-jdbc 支持 Liquibase 的自动化配置 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+        </dependency>
+        <!-- 本示例，我们使用 MySQL -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+        <!-- Liquibase 依赖 -->
+        <dependency>
+            <groupId>org.liquibase</groupId>
+            <artifactId>liquibase-core</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
