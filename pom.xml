@@ -13,6 +13,7 @@
         <module>labs-springboot2-web</module>
         <module>labs-springboot2-rpc</module>
         <module>labs-springboot2-data-access</module>
+        <module>labs-springboot2-job</module>
     </modules>
 
     <dependencyManagement>
