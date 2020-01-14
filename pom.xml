@@ -14,6 +14,7 @@
         <module>labs-springboot2-rpc</module>
         <module>labs-springboot2-data-access</module>
         <module>labs-springboot2-job</module>
+        <module>labs-springboot2-mq</module>
     </modules>
 
     <dependencyManagement>
