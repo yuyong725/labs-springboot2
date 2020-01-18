@@ -12,11 +12,6 @@
     <artifactId>labs-springboot2-dubbo-xml-api</artifactId>
 
     <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-
         <!-- JSR 参数校验规范 API -->
         <dependency>
             <groupId>javax.validation</groupId>

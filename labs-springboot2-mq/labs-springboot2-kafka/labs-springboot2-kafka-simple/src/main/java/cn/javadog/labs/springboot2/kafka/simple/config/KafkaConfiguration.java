@@ -1,0 +1,43 @@
+package cn.javadog.labs.springboot2.kafka.simple.config;
+
+import java.util.function.BiConsumer;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.kafka.listener.DeadLetterPublishingRecoverer;
+import org.springframework.kafka.listener.ErrorHandler;
+import org.springframework.kafka.listener.SeekToCurrentErrorHandler;
+import org.springframework.util.backoff.BackOff;
+import org.springframework.util.backoff.FixedBackOff;
+
+/**
+ * @author 余勇
+ * @date 2020-01-17 12:23
+ */
+@Configuration
+public class KafkaConfiguration {
+
+    @Bean
+    @Primary
+    public ErrorHandler kafkaErrorHandler(KafkaTemplate<?, ?> template) {
+        // 创建 DeadLetterPublishingRecoverer 对象
+        BiConsumer recoverer = new DeadLetterPublishingRecoverer((KafkaTemplate<Object, Object>) template);
+        // 创建 SeekToCurrentErrorHandler 对象
+        return new SeekToCurrentErrorHandler(recoverer, 3);
+    }
+
+//    @Bean
+//    @Primary
+//    public BatchErrorHandler kafkaBatchErrorHandler() {
+//        // 创建 SeekToCurrentBatchErrorHandler 对象
+//        SeekToCurrentBatchErrorHandler batchErrorHandler = new SeekToCurrentBatchErrorHandler();
+//        // 创建 FixedBackOff 对象
+//        BackOff backOff = new FixedBackOff(10 * 1000L, 3L);
+//        batchErrorHandler.setBackOff(backOff);
+//        // 返回
+//        return batchErrorHandler;
+//    }
+
+}

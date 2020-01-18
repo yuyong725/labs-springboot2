@@ -1,6 +1,0 @@
-spring:
-  cache:
-    ehcache:
-      config: classpath:ehcache.xml # 默认就是该位置，无须配置，除非自定义了其他命名
-    type: ehcache
-

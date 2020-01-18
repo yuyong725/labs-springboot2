@@ -25,12 +25,6 @@
             <scope>test</scope>
         </dependency>
 
-        <!--简化-->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-
         <!-- 引入 jackson 对 xml 的转换器，实现对 XML 的序列化，使用时注意优先级，不设置的默认优先级更高 -->
         <dependency>
             <groupId>com.fasterxml.jackson.dataformat</groupId>
