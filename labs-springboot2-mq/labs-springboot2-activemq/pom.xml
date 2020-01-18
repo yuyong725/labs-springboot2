@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>labs-springboot2-mq</artifactId>
+        <groupId>cn.javadog</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>labs-springboot2-activemq</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>labs-springboot2-activemq-native</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- 引入 ActiveMQ 客户端依赖 -->
+            <dependency>
+                <groupId>org.apache.activemq</groupId>
+                <artifactId>activemq-client</artifactId>
+                <version>5.15.10</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>

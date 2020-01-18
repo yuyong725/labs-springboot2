@@ -14,6 +14,8 @@
     <modules>
         <module>labs-springboot2-rocketmq</module>
         <module>labs-springboot2-kafka</module>
+        <module>labs-springboot2-rabbitmq</module>
+        <module>labs-springboot2-activemq</module>
     </modules>
 
 </project>
