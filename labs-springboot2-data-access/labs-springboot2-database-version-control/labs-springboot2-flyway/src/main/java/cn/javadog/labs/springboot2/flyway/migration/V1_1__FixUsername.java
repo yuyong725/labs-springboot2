@@ -1,15 +1,11 @@
 package cn.javadog.labs.springboot2.flyway.migration;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
 import org.flywaydb.core.api.MigrationVersion;
 import org.flywaydb.core.api.migration.BaseJavaMigration;
 import org.flywaydb.core.api.migration.Context;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowCallbackHandler;
 
 /**
  * @author 余勇

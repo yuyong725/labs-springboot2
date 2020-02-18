@@ -33,7 +33,7 @@ public class OrderService {
     }
 
     public OrderDO findById(Integer id) {
-        return orderMapper.selectById(id);
+        return orderMapper.selectByUserId(id);
     }
 
 }

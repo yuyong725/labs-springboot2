@@ -19,5 +19,6 @@ public interface OrderMapper {
     @DS(DBConstants.DATASOURCE_MASTER)
     int insert(OrderDO entity);
 
+    @DS(DBConstants.DATASOURCE_SLAVE)
     OrderDO selectByUserId(@Param("userId") Integer userId);
 }

@@ -1,0 +1,35 @@
+spring:
+  # ShardingSphere 配置项
+  shardingsphere:
+    datasource:
+      # 所有数据源的名字
+      names: ds-orders, ds-users
+      # 订单 orders 数据源配置
+      ds-orders:
+        type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/labs-springboot2-multiple?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+        username: root
+        password: root
+      # 订单 users 数据源配置
+      ds-users:
+        type: com.zaxxer.hikari.HikariDataSource # 使用 Hikari 数据库连接池
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        jdbc-url: jdbc:mysql://127.0.0.1:3306/labs-springboot2?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+        username: root
+        password: root
+    # 分片规则
+    sharding:
+      tables:
+        # orders 表配置
+        dynamic_datasource_orders:
+          actualDataNodes: ds-orders.dynamic_datasource_orders # 映射到 ds-orders 数据源的 orders 表
+        # users 表配置
+        dynamic_datasource_users:
+          actualDataNodes: ds-users.dynamic_datasource_users # 映射到 ds-users 数据源的 users 表
+
+# mybatis 配置内容
+mybatis:
+  config-location: classpath:mybatis-config.xml # 配置 MyBatis 配置文件路径
+  mapper-locations: classpath:mapper/*.xml # 配置 Mapper XML 地址
+  type-aliases-package: cn.javadog.labs.springboot2.datasource.dynamic.shardingjdbc.one.dataobject # 配置数据库实体包路径
