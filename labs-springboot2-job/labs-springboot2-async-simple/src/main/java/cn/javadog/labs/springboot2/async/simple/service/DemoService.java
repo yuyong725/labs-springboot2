@@ -68,7 +68,7 @@ public class DemoService {
     }
 
     @Async
-    public Integer zhaoDaoNvPengYou(Integer a, Integer b) {
+    public Integer zhaoDaoNvPengYou() {
         throw new RuntimeException("程序员不需要女朋友");
     }
 

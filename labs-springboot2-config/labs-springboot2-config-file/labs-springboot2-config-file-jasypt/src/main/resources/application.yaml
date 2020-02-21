@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: ENC(IbioSE6z+xXW0KpLRej9BDtpTlAidchW0dbZrQl1jkWnzVCd/5vPzQ==)
+#    name: demo-application
+
+jasypt:
+  # jasypt 配置项，对应 JasyptEncryptorConfigurationProperties 配置类
+  encryptor:
+    algorithm: PBEWithMD5AndDES # 加密算法
+    password: ${JASYPT_PASSWORD} # 加密秘钥

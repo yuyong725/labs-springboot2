@@ -94,7 +94,7 @@ public class DemoServiceTest {
 
     @Test
     public void testZhaoDaoNvPengYou() throws InterruptedException {
-        demoService.zhaoDaoNvPengYou(1, 2);
+        demoService.zhaoDaoNvPengYou();
 
         // sleep 1 秒，保证异步调用的执行
         Thread.sleep(1000);

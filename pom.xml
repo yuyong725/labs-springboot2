@@ -15,6 +15,7 @@
         <module>labs-springboot2-data-access</module>
         <module>labs-springboot2-job</module>
         <module>labs-springboot2-mq</module>
+        <module>labs-springboot2-config</module>
     </modules>
 
     <dependencyManagement>
