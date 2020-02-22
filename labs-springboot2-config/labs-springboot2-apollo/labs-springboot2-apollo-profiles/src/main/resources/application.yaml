@@ -1,0 +1,4 @@
+#server:
+spring:
+  application:
+    name: demo-application
