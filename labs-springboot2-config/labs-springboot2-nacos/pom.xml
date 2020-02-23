@@ -13,6 +13,11 @@
     <packaging>pom</packaging>
     <modules>
         <module>labs-springboot2-nacos-simple</module>
+        <module>labs-springboot2-nacos-profiles</module>
+        <module>labs-springboot2-nacos-autorefresh</module>
+        <module>labs-springboot2-nacos-jasypt</module>
+        <module>labs-springboot2-nacos-actuator</module>
+        <module>labs-springboot2-nacos-multi</module>
     </modules>
 
     <dependencyManagement>
