@@ -16,6 +16,7 @@
         <module>labs-springboot2-job</module>
         <module>labs-springboot2-mq</module>
         <module>labs-springboot2-config</module>
+        <module>labs-springboot2-registry</module>
     </modules>
 
     <dependencyManagement>
