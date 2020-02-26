@@ -6,7 +6,7 @@ import lombok.experimental.Accessors;
 /**
  * @author 余勇
  * @date 2020-01-10 23:39
- * 订单配置 DO
+ * 订单配置 dataobject
  */
 @Data
 @Accessors(chain = true)

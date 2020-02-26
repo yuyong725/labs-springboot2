@@ -9,7 +9,7 @@ import lombok.experimental.Accessors;
 /**
  * @author 余勇
  * @date 2020-01-08 21:24
- * 用户 DO
+ * 用户 dataobject
  * 必须实现 Serializable 接口
  */
 @Data

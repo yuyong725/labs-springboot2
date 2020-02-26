@@ -8,7 +8,7 @@ import lombok.experimental.Accessors;
 /**
  * @author 余勇
  * @date 2020-01-08 11:44
- * 用户 DO
+ * 用户 dataobject
  */
 @Data
 @Accessors(chain = true)

@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 /**
  * @author 余勇
  * @date 2020-01-11 00:04
- * 订单 DO
+ * 订单 dataobject
  */
 @Data
 @Accessors(chain = true)
