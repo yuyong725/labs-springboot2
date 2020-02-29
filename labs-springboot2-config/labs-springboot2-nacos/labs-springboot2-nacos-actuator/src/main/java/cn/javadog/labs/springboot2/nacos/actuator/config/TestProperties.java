@@ -9,7 +9,7 @@ import com.alibaba.nacos.api.config.annotation.NacosConfigurationProperties;
  * @date 2020年02月22日 19:10:00
  */
 @Component
-@NacosConfigurationProperties(prefix = "", dataId = "${nacos.config.data-id}", type = ConfigType.YAML, autoRefreshed = true)
+@NacosConfigurationProperties(prefix = "", dataId = "${apollo.config.data-id}", type = ConfigType.YAML, autoRefreshed = true)
 //@ConfigurationProperties(prefix = "test")
 public class TestProperties {
 

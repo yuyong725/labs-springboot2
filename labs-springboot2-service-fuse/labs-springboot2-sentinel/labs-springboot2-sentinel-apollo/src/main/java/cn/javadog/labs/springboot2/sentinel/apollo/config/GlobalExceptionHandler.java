@@ -1,4 +1,4 @@
-package cn.javadog.labs.springboot2.sentinel.nacos.config;
+package cn.javadog.labs.springboot2.sentinel.apollo.config;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;

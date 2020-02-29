@@ -26,7 +26,7 @@ public class LoggingSystemConfigListener {
 	private LoggingSystem loggingSystem;
 
 
-	@NacosConfigListener(dataId = "${nacos.config.data-id}", type = ConfigType.YAML, timeout = 5000)
+	@NacosConfigListener(dataId = "${apollo.config.data-id}", type = ConfigType.YAML, timeout = 5000)
 	public void onChange(String newLog) throws Exception {
 		// <X> 使用 DefaultYamlConfigParse 工具类，解析配置
 		Properties properties = new DefaultYamlConfigParse().parse(newLog);

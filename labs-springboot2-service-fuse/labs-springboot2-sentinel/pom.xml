@@ -14,6 +14,8 @@
     <modules>
         <module>labs-springboot2-sentinel-simple</module>
         <module>labs-springboot2-sentinel-nacos</module>
+        <module>labs-springboot2-sentinel-apollo</module>
+        <module>labs-springboot2-sentinel-file</module>
     </modules>
 
     <dependencyManagement>
