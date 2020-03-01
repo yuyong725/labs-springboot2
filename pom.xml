@@ -19,6 +19,7 @@
         <module>labs-springboot2-registry</module>
         <module>labs-springboot2-cd</module>
         <module>labs-springboot2-service-fuse</module>
+        <module>labs-springboot2-monitor</module>
     </modules>
 
     <dependencyManagement>
