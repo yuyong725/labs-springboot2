@@ -27,7 +27,7 @@ management:
 info:
   app:
     java:
-      source: 1.8.0_201
-      target: 1.8.0_201
+      source: 1.8.0_152-release
+      target: 1.8.0_152-release
     encoding: UTF-8
     version: 1.0-SNAPSHOT

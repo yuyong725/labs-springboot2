@@ -1,0 +1,26 @@
+spring:
+  mail: # 配置发送告警的邮箱
+    host: smtp.163.com
+    username: yuyong_material@163.com
+    password: yyba725
+    default-encoding: UTF-8
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+            fallback: false
+            port: 465
+          port: 465
+
+
+  boot:
+    admin:
+      notify:
+        mail:
+          from: ${spring.mail.username} # 告警发件人
+          to: 1210454596@qq.com # 告警收件人
