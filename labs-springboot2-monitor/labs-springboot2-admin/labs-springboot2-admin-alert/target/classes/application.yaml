@@ -2,7 +2,7 @@ spring:
   mail: # 配置发送告警的邮箱
     host: smtp.163.com
     username: yuyong_material@163.com
-    password: yyba725
+    password: "******"
     default-encoding: UTF-8
     properties:
       mail:
