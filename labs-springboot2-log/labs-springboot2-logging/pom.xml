@@ -13,6 +13,12 @@
     <packaging>pom</packaging>
     <modules>
         <module>labs-springboot2-logging-simple</module>
+        <module>labs-springboot2-logging-actuator</module>
+        <module>labs-springboot2-logging-debug</module>
+        <module>labs-springboot2-logging-multi-env</module>
+        <module>labs-springboot2-logging-logback</module>
+        <module>labs-springboot2-logging-log4j2</module>
+        <module>labs-springboot2-logging-aop</module>
     </modules>
 
 

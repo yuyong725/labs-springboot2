@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: demo-application-logging-multi-env-prod # 应用名
+
+logging:
+  # 日志文件配置
+  file: /Users/yuyong/logs/${spring.application.name}.log # 日志文件名。

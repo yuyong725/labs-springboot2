@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: demo-application # 应用名
+
+logging:
+  file: /Users/yuyong/logs/${spring.application.name}.log
+  file.max-history: 7 # 日志文件要保留的归档的最大天数。默认为 7 天。
+  file.max-size: 10MB # 日志文件的最大大小。默认为 10MB 。
+
+# 调试模式
+debug: true
