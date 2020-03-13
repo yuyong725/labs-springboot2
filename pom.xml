@@ -21,6 +21,7 @@
         <module>labs-springboot2-service-fuse</module>
         <module>labs-springboot2-monitor</module>
         <module>labs-springboot2-log</module>
+        <module>labs-springboot2-trace</module>
     </modules>
 
     <dependencyManagement>
